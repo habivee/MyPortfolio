@@ -1,10 +1,70 @@
-@media screen and  (max-width: 768) {
-    body {
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
     }
 
-    .hero-container{
-        
+    .left-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .left-hero img.avatar {
+        width: 150px;
+        height: auto;
+    }
+
+    .right-hero .portfolio-heading {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .about-me-section {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    
+    .burger-menu img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .close-icon {
+        display: none;
     }
 
     

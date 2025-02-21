@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="burger.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -20,6 +21,11 @@
             <a href="#home"><img class="site-logo" src="assets/logo.png" alt=""></a>
             <a href="#home"><h2 class="site-title">Jayvee Escabal</h2></a>
         </div>
+        <!-- Menu -->
+        <div class="burger-menu" onclick="toggleMenu()">
+            <img src="assets/menu.svg" class="burger-icon" alt="Menu">
+            <img src="assets/close.svg" class="close-icon" alt="Close">
+        </div>
         <!-- Right Navigation  -->
         <ul class="right-nav">
             <li><a href="#home">Home</a></li>
@@ -29,14 +35,12 @@
             <li><a class="hire-me" href="#">Hire Me</a></li>
         </ul>
     </div>
+
     <!-- Hero Section -->
     <div class="hero-section">
-        <!-- Left-hero -->
         <div class="left-hero">
-            <img class="avatar" src="assets/avatar.png" alt="">
             <img class="hero-profile" src="assets/profile.png" alt="">   
         </div>
-        <!-- Right Hero -->
         <div class="right-hero">
             <h1 class="portfolio-heading">Explore My <br> <span class="portfolio-highlight">Portfolio</span></h1>
             <h2 class="sub-heading">Discover <img class="discover" src="assets/research.png" alt="">My Expertise as a Full-Stack Developer &#128187;</h2>
@@ -47,16 +51,30 @@
             <p class="mini-sub">Crafting Innovative Digital Solutions for Your Business</p>
         </div>
     </div>
+
     <!-- About Me Section -->
     <div class="about-me-section" id="about">
         <div class="about-me-text">
             <h1 class="about-me">About Me</h1>
             <p>Full-Stack Developer | IT Specialist</p>
-            <div class="description"><p>I'm a Full Stack Developer passionate about building scalable, secure, and high-performance web applications. I create seamless user experiences from front-end design to back-end architecture. Focused on clean code, optimization, and innovation, I thrive in collaborative environments, transforming ideas into impactful digital solutions that drive efficiency and engagement. 🚀</p></div>           
+            <div class="description">
+                <p>I'm a Full Stack Developer passionate about building scalable, secure, and high-performance web applications. I create seamless user experiences from front-end design to back-end architecture. Focused on clean code, optimization, and innovation, I thrive in collaborative environments, transforming ideas into impactful digital solutions that drive efficiency and engagement. 🚀</p>
+            </div>           
         </div>
     </div>
 
+    <script>document.addEventListener("DOMContentLoaded", function () {
+        const burgerMenu = document.querySelector(".burger-menu");
+        const nav = document.querySelector(".right-nav");
+        const burgerIcon = document.querySelector(".burger-icon");
+        const closeIcon = document.querySelector(".close-icon");
     
-    
+        burgerMenu.addEventListener("click", function () {
+            nav.classList.toggle("active");
+            burgerIcon.style.display = nav.classList.contains("active") ? "none" : "block";
+            closeIcon.style.display = nav.classList.contains("active") ? "block" : "none";
+            });
+        });
+    </script> 
 </body>
 </html>
