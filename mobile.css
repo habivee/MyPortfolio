@@ -1,71 +1,80 @@
 @media screen and (max-width: 768px) {
+    /* General Styling */
+    body {
+        font-size: 14px;
+    }
+
+    /* Header */
     .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        height: 65px;
         padding: 10px 15px;
     }
 
-    .left-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
+    /* Navigation */
     .right-nav {
-        display: flex;
+        display: none;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: white;
         padding: 10px 0;
+        text-align: center;
     }
 
-    .hero-section {
+    .right-nav.active {
         display: flex;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        margin-top: 80px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 20px 15px;
     }
 
-    .left-hero img.avatar {
-        width: 150px;
-        height: auto;
+    .hero-profile {
+        width: 70%;
+        max-width: 250px;
     }
 
-    .right-hero .portfolio-heading {
-        font-size: 1.8rem;
+    /* Text Adjustments */
+    .portfolio-heading {
+        font-size: 1.5rem;
     }
 
+    .sub-heading {
+        font-size: 1rem;
+    }
+
+    /* Buttons */
     .btn {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        align-items: center;
+    }
+
+    .btn-resume,
+    .btn-contact {
+        width: 90%;
+        max-width: 250px;
+        padding: 10px;
     }
 
     .about-me-section {
-        padding: 30px 15px;
-        text-align: center;
+        flex-direction: column; 
+        text-align: center; 
+        padding: 30px;
     }
 
-    .burger-menu {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        cursor: pointer;
-        z-index: 1000;
-    }
-    
-    .burger-menu img {
-        width: 30px;
-        height: 30px;
-    }
-    
-    .close-icon {
-        display: none;
+    .about-me-text {
+        max-width: 90%;
     }
 
-    
+    .description p {
+        font-size: 16px;
+        text-align: justify;
+    }
 }
