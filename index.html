@@ -13,6 +13,7 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <div class="container">
     <!-- Header -->
     <header id="home">
     <!-- Navigation -->
@@ -24,8 +25,8 @@
         </div>
         <!-- Menu -->
         <div class="burger-menu" onclick="toggleMenu()">
-            <img src="assets/menu.svg" class="burger-icon" alt="Menu">
-            <img src="assets/close.svg" class="close-icon" alt="Close">
+            <img src="assets/menu.png" class="burger-icon" alt="Menu">
+            <img src="assets/close.png" class="close-icon" alt="Close">
         </div>
         <!-- Right Navigation  -->
         <ul class="right-nav">
@@ -33,7 +34,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a class="hire-me" href="#">Hire Me</a></li>
+            <li><a class="hire-me" href="https://www.instagram.com/habiveeee/">Hire Me</a></li>
         </ul>
         </div>
     </header>
@@ -67,16 +68,32 @@
     </div>
     <!-- Footer -->
     <footer class="footer">
+        <h2 id="contact" >Jayvee Escabal</h2>
         <div class="footer-container">
-            <div class="footer-links">
-                <h2 id="contact" >Contact Me</h2>
-                <ul>
-                    <li>Email: pro.jayveeescabal@gmail.com</li>
-                    <li>Phone: +123 456 7890</li>
+            <div class="footer-left">
+                <h2 id="contact">Contact Me</h2>
+                <ul class="contact-me">
+                    <li>
+                        <img class="email-logo" src="assets/email.png" alt="Email Icon">
+                        <span>pro.jayveeescabal@gmail.com</span>
+                    </li>
+                    <li>
+                        <img class="phone-logo" src="assets/phone.png" alt="Phone Icon">
+                        <span>+123 456 7890</span>
+                    </li>
                 </ul>
             </div>
-        </div>
-    
+
+            <div class="footer-right">
+                <h2 id="contact">Social Media</h2>
+                <ul>
+                    <li><a href="https://github.com/habivee/"><img src="assets/github.png" alt="GitHub"></a></li>
+                    <li><a href="https://www.instagram.com/habiveeee/"><img src="assets/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.tiktok.com/@daph4evs?lang=en/"><img src="assets/tiktok.png" alt="TikTok"></a></li>
+                    <li><a href="https://www.facebook.com/iSpyVee/"><img src="assets/facebook.png" alt="Facebook"></a></li>
+                </ul>
+            </div>
+        </div> 
         <div class="footer-bottom">
             <p>&copy; 2025 Jayvee Escabal. All Rights Reserved.</p>
         </div>
@@ -107,5 +124,6 @@
     });
     
     </script> 
+    </div>
 </body>
 </html>

@@ -67,14 +67,18 @@
         flex-direction: column; 
         text-align: center; 
         padding: 30px;
-    }
+        margin-bottom: 150px;
+        min-height: auto;
+        }
 
     .about-me-text {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .description p {
         font-size: 16px;
+        
         text-align: justify;
+        line-height: 1.6;
     }
 }

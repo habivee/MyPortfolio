@@ -4,23 +4,19 @@
     font-family: "Poppins", sans-serif;
 }
 /* Header */
+.back-site {
+    width: 36px;
+    padding: 10px; 
+    margin: 5px;
+    
+}
 .site-logo-title {
     display: flex;
     align-items: center;
-    margin: 10px 100px;
 }
 
 a {
     text-decoration: none;
-}
-.site-logo {
-    width: 48px;
-    border-radius: 25px;
-}
-
-.site-title {
-    color: #9e363a;
-    font-size: 28px;
 }
 
 /* Projects-Section */
