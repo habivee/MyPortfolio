@@ -34,13 +34,10 @@ html, body {
 .site-logo {
     width: 48px;
     border-radius: 25px;
-    animation-name: logoanim;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation: rotateLogo 6s linear infinite; 
 }
 
-@keyframes logoanim {
+@keyframes rotateLogo {
     from {
         transform: rotate(0deg);
     }
