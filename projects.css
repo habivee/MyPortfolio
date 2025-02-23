@@ -1,13 +1,10 @@
 * {
-    padding: 0;
-    margin: 0;
     font-family: "Poppins", sans-serif;
 }
 /* Header */
 .back-site {
     width: 36px;
-    padding: 10px; 
-    margin: 5px;
+    padding: 10px 25px; 
     
 }
 .site-logo-title {
